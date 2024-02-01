@@ -1,0 +1,11 @@
+.post {
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid #00000038;
+  box-shadow: -3px 4px 3px 0px #0000008a;
+  transition: 0.3s;
+  &:hover {
+    transform: translate(3px, -3px);
+    box-shadow: -6px 7px 6px 0px #00000087;
+  }
+}

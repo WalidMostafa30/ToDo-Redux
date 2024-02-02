@@ -1,0 +1,68 @@
+.add-new-post {
+  &__title {
+    margin: auto;
+    padding: 5px 30px;
+    width: fit-content;
+    color: white;
+    background-color: black;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: var(--main-shadow);
+  }
+
+  &__form {
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 20px;
+    width: 60%;
+    background-color: black;
+    box-shadow: var(--main-shadow);
+  }
+
+  &__input {
+    font-size: 28px;
+    width: 100%;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: var(--main-border-radius);
+    border: 2px solid black;
+  }
+
+  &__text-area {
+    font-size: 28px;
+    width: 100%;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: var(--main-border-radius);
+    border: 2px solid black;
+    min-height: 200px;
+    max-height: 400px;
+  }
+
+  &__label {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: white;
+  }
+
+  &__btns {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: var(--main-border-radius);
+    border: none;
+  }
+}

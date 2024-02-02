@@ -1,25 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import "./css/App.css";
-import Header from "./components/Header";
-import Posts from "./components/Posts";
+import Header from "./components/header/Header";
+import Home from "./pages/Todos/ToDos";
+import Finish from "./pages/finish/Finish";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AddNewPost from "./pages/addNewPost/AddNewPost";
 
 const App = () => {
-  const [activPost, setActivPost] = useState(false);
-  const openPostHandler = () => {
-    setActivPost(true);
-  };
-  const closePostHandler = () => {
-    setActivPost(false);
-  };
-
   return (
-    <div className="App">
-      <Header openPostHandler={openPostHandler} />
-      <Posts
-        activPost={activPost}
-        closePostHandler={closePostHandler}
-      />
-    </div>
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/finish" element={<Finish />} />
+          <Route path="/addpost" element={<AddNewPost />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 };
 

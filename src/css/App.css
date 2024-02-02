@@ -253,6 +253,11 @@ i {
   background-color: black;
   box-shadow: var(--main-shadow);
 }
+    @media (max-width: 768px) {
+      .add-new-post__form {
+      width: 95%;
+      }
+    }
 .add-new-post__input {
   font-size: 28px;
   width: 100%;
@@ -319,6 +324,11 @@ i {
   box-shadow: var(--main-shadow);
   z-index: 1001;
 }
+    @media (max-width: 768px) {
+      .edit-post__form {
+      width: 95%;
+      }
+    }
 .edit-post__input {
   font-size: 28px;
   width: 100%;
